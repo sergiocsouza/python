@@ -36,3 +36,25 @@ import statistics as sts;
 print(f'{sts.harmonic_mean(x)}');
 
 
+#calculo com loop
+
+#Menos chances de erro.
+
+somaX = [(1/x[k]) for k in range (0, len(x))]
+
+somaX = sum(somaX)
+
+xH = nX / somaX
+
+print(xH)
+
+#Realizando o calculo com Y
+nY = (len(y))
+
+somaY = [(1/y[k]) for k in range (0, len(y))]
+somaY = sum(somaY)
+
+xH = nY / somaY
+
+print(f'Média harmônica = {nY} / {somaY}');
+print(xH)
